@@ -258,6 +258,19 @@ Get-Content logs\stocks_tok.log -Wait
 2. `docs/deployment/maintenance.md` の障害対応セクション
 3. ログファイルの詳細確認
 
+## 開発フロー・運用方針（gitflow）
+
+- 本プロジェクトは**gitflow**を基本としたブランチ運用を行います。
+- `main` から `develop` を作成し、日常開発は `develop` 基軸で進めます。
+- 新機能・修正は `feature/○○` `bugfix/○○` など日本語要旨付きブランチで作業し、必ずPR経由で `develop` へマージします。
+- `develop` から `main` へのリリースもPR経由で行います。
+- コミットメッセージは日本語で記述し、`feat:`, `fix:` などのタイプprefixを付与します。
+- 想定外の事象が発生した場合は、エージェントが自力で解決策を検討しつつ、**必ずissueを立てて記録**します。
+- GitHub Actions等の自動化は無料範囲で自由に設計・運用します。
+- StocksTokリポジトリ外に影響を及ぼす操作は禁止し、開発・CI/CD・テスト等は必ず本リポジトリ内で完結させます。
+
+詳細は `docs/development/coding-guidelines.md` も参照してください。
+
 ## ライセンス
 
 このプロジェクトは無料で利用可能なライブラリのみを使用しています。
