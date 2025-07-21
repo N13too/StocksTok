@@ -1,0 +1,38 @@
+# StocksTok Dependencies
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+streamlit==1.28.1
+
+# Data Processing
+pandas==2.1.3
+numpy==1.25.2
+
+# HTTP Client
+requests==2.31.0
+aiohttp==3.9.1
+
+# Technical Analysis
+pandas-ta==0.3.14b
+
+# Machine Learning
+scikit-learn==1.3.2
+
+# Visualization
+plotly==5.17.0
+matplotlib==3.8.2
+
+# Configuration
+pydantic==2.5.0
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1 
